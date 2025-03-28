@@ -1,9 +1,8 @@
 /*
 
-Tooplate 2119 Gymso Fitness
+Alleysway
 
-https://www.tooplate.com/view/2119-gymso-fitness
-
+hhtps://devignite.co.za
 */
 
   @font-face {
@@ -28,6 +27,11 @@ https://www.tooplate.com/view/2119-gymso-fitness
           url('../fonts/Plain-Bold.woff') format('woff');
       font-weight: bold;
       font-style: normal;
+  }
+
+  @font-face{
+    font-family: 'Shary';
+    src: url('../fonts/SHARY-Bold.ttf') format('truetype');
   }
 
   :root {
@@ -77,6 +81,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   h1 {
+    font-family: 'Shary';
     font-size: var(--h1-font-size);
     font-weight: var(--font-weight-bold);
     letter-spacing: -1px;
@@ -85,6 +90,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   h2 {
+    font-family: 'Shary';
     font-size: var(--h2-font-size);
     font-weight: var(--font-weight-bold);
     letter-spacing: -2px;
@@ -193,6 +199,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   a {
+    font-family: 'Shary';
     color: var(--link-color);
     font-weight: normal;
     text-decoration: none;
@@ -258,9 +265,11 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .navbar {
-    background: var(--dark-color);
+    background: rgba(241, 58, 17, 0.85); /* orange with transparency */
     padding: 1rem;
+    transition: background-color 0.3s ease;
   }
+  
 
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
@@ -286,7 +295,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .nav-item .nav-link.active,
   .nav-item .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--dark-color);
   }
 
   .navbar .social-icon li a {
@@ -328,7 +337,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   .navbar-toggler .navbar-toggler-icon {
-    background: var(--primary-color);
+    background: var(--dark-color);
     transition: background 10ms 300ms ease;
     display: block;
     width: 30px;
@@ -344,7 +353,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     position: absolute;
     right: 0;
     left: 0;
-    background: var(--primary-color);
+    background: var(--dark-color);
     width: 30px;
     height: 2px;
     content: '';
@@ -667,3 +676,27 @@ https://www.tooplate.com/view/2119-gymso-fitness
       display: block;
     }
   }
+
+  /* LOGO STYLING */
+.logo-img {
+  max-height: 75px;
+  max-width: 75%;
+  height: auto;
+  width: auto;
+  display: block;
+}
+
+/* Responsive logo for smaller screens */
+@media screen and (max-width: 768px) {
+  .logo-img {
+    max-height: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-img {
+    max-height: 60px;
+  }
+}
+
+  
