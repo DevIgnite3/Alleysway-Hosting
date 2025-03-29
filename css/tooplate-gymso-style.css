@@ -101,6 +101,7 @@ hhtps://devignite.co.za
     font-weight: var(--font-weight-bold);
     letter-spacing: -1px;
     margin: 0;
+    color: black;
   }
 
   h4 {
@@ -503,6 +504,7 @@ hhtps://devignite.co.za
 
   .team-thumb {
     position: relative;
+    margin-top: 2rem;
   }
 
   .team-info {
