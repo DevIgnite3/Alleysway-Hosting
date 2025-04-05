@@ -273,8 +273,8 @@ hhtps://devignite.co.za
   
 
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .navbar-brand {
@@ -416,6 +416,18 @@ hhtps://devignite.co.za
     height: 3.5rem;
     line-height: 3.5rem;
     text-align: center;
+  }
+
+  .class .row {
+    justify-content: center;
+    gap: 2rem; /* space between items */
+    row-gap: 3rem; /* optional extra row spacing */
+  }
+  
+  .class-thumb {
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
   }
 
 
@@ -629,6 +641,61 @@ hhtps://devignite.co.za
   .social-icon li a:hover {
     color: var(--primary-color);
   }
+
+  /*-----------------------------
+  Flip Card Styles
+  ------------------------------*/
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 350px;
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front {
+  background-color: #fff;
+}
+
+.flip-card-back {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  align-content: center !important;
+  transform: rotateY(180deg);
+  text-align:center;
+}
+
+#services{
+  align-content: center;
+}
+
 
 
   /*---------------------------------------
