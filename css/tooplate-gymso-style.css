@@ -206,6 +206,16 @@ hhtps://devignite.co.za
     text-decoration: none;
     transition: all 0.3s ease;
   }
+  
+  .revert-link a {
+    all: unset; /* Resets nearly all inherited styles */
+    color: inherit; /* Inherits current text color */
+    cursor: pointer; /* Keeps it clickable */
+  }
+  
+  .revert-link a:hover {
+    color: var(--primary-color); /* Or any other color you prefer */
+  }
 
   a:hover, 
   a:active, 
